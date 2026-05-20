@@ -34,7 +34,7 @@ int main() {
 
     for (const auto& [name, searchFn] : ALGORITHMS) {
         std::cout << "\n>> " << name << "\n";
-        printTableHeader();
+        print_table_header();
 
         bool is_binary = (name == "Binary Search");
 
@@ -50,10 +50,10 @@ int main() {
                 m.n              = n;
 
                 searchFn(data, target, m);
-                printMetrics(m);
+                print_metrics(m);
             }
 
-            printSeparator();
+            print_separator();
         }
     }
 
